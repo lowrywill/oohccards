@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card Game Prototype</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<h1>Card Game Prototype</h1>
+	<div id="stats">
+		<h2>Stats</h2>
+		<div class="stat">
+			<label for="skill1">Skill 1:</label>
+			<input type="range" id="skill1" name="skill1" min="1" max="6" value="3">
+			<span id="skill1-value"></span>
+		</div>
+		<div class="stat">
+			<label for="skill2">Skill 2:</label>
+			<input type="range" id="skill2" name="skill2" min="1" max="6" value="3">
+			<span id="skill2-value"></span>
+		</div>
+		<div class="stat">
+			<label for="skill3">Skill 3:</label>
+			<input type="range" id="skill3" name="skill3" min="1" max="6" value="3">
+			<span id="skill3-value"></span>
+		</div>
+	</div>
+	<div id="cards">
+		<h2>Cards</h2>
+		<div id="card-blue" class="card">
+			<h3>Blue Deck</h3>
+			<div id="card-blue-text"></div>
+			<button id="card-blue-reveal" onclick="revealCard('blue')">Reveal Card</button>
+		</div>
+		<div id="card-red" class="card">
+			<h3>Red Deck</h3>
+			<div id="card-red-text"></div>
+			<button id="card-red-reveal" onclick="revealCard('red')">Reveal Card</button>
+		</div>
+	</div>
+	<div id="response">
+		<h2>Response</h2>
+		<textarea id="response-text"></textarea>
+	</div>
+	<button id="end-game" onclick="endGame()">End Game</button>
+</body>
+</html>

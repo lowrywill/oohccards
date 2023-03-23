@@ -6,10 +6,14 @@ const sumElement = document.getElementById("slider-sum");
 
 // Update the sum when the sliders change
 function updateSum() {
+  console.log("Updating sum...");
   const sum = parseInt(slider1.value) + parseInt(slider2.value) + parseInt(slider3.value);
   sumElement.innerHTML = sum;
 }
 
-slider1.addEventListener("input", updateSum);
+slider1.addEventListener("input", function() {
+  console.log("Slider 1 changed");
+  updateSum();
+});
 slider2.addEventListener("input", updateSum);
 slider3.addEventListener("input", updateSum);

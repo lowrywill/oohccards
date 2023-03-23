@@ -1,32 +1,39 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Card Game Test</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-  <h1>Card Game Test</h1>
-  <p>This is a simple website that allows you to test a card game.</p>
-
-  <section id="sliders">
-    <h2>Sliders</h2>
-    <p>There are three sliders in this section. The sliders allow you to manipulate the values. The current sum of the values is displayed at the bottom of the section.</p>
-    <slider id="slider1" value="1" min="1" max="6" step="1"></slider>
-    <slider id="slider2" value="2" min="1" max="6" step="1"></slider>
-    <slider id="slider3" value="3" min="1" max="6" step="1"></slider>
-
-  <section id="decks">
-    <h2>Decks</h2>
-    <p>There are two simulated decks of cards in this section. The decks will have 9 cards in predetermined order. The 'front' of each card will have text content that you provide. The 'back' of one deck will be blue, and the 'back' of the other deck will be red.</p>
-    <div id="deck1"></div>
-    <div id="deck2"></div>
-  </section>
-
-  <section id="questions">
-    <h2>Questions</h2>
-    <p>There is a text-input area where the player will answer text prompts on the cards. These should be saved so that at the end of the game they can all be exported.</p>
-    <textarea id="questions"></textarea>
-  </section>
-
-</body>
+	<div id="stats">
+		<h2>Stats</h2>
+		<p>Category 1: <input type="range" min="1" max="6" value="3" class="slider"></p>
+		<p>Category 2: <input type="range" min="1" max="6" value="3" class="slider"></p>
+		<p>Category 3: <input type="range" min="1" max="6" value="3" class="slider"></p>
+	</div>
+	<div id="decks">
+		<div id="blue-deck">
+			<h2>Blue Deck</h2>
+			<div class="card">Card 1</div>
+			<div class="card">Card 2</div>
+			<div class="card">Card 3</div>
+			<div class="card">Card 4</div>
+			<div class="card">Card 5</div>
+			<div class="card">Card 6</div>
+			<div class="card">Card 7</div>
+			<div class="card">Card 8</div>
+			<div class="card">Card 9</div>
+		</div>
+		<div id="red-deck">
+			<h2>Red Deck</h2>
+			<div class="card">Card 1</div>
+			<div class="card">Card 2</div>
+			<div class="card">Card 3</div>
+			<div class="card">Card 4</div>
+			<div class="card">Card 5</div>
+			<div class="card">Card 6</div>
+			<div class="card">Card 7</div>
+    </div>
+  </div>
+  </body>
 </html>

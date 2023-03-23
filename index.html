@@ -1,47 +1,30 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Card Game Prototype</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="script.js"></script>
+  <title>Card Game Test</title>
 </head>
 <body>
-	<h1>Card Game Prototype</h1>
-	<div id="stats">
-		<h2>Stats</h2>
-		<div class="stat">
-			<label for="skill1">Skill 1:</label>
-			<input type="range" id="skill1" name="skill1" min="1" max="6" value="3">
-			<span id="skill1-value"></span>
-		</div>
-		<div class="stat">
-			<label for="skill2">Skill 2:</label>
-			<input type="range" id="skill2" name="skill2" min="1" max="6" value="3">
-			<span id="skill2-value"></span>
-		</div>
-		<div class="stat">
-			<label for="skill3">Skill 3:</label>
-			<input type="range" id="skill3" name="skill3" min="1" max="6" value="3">
-			<span id="skill3-value"></span>
-		</div>
-	</div>
-	<div id="cards">
-		<h2>Cards</h2>
-		<div id="card-blue" class="card">
-			<h3>Blue Deck</h3>
-			<div id="card-blue-text"></div>
-			<button id="card-blue-reveal" onclick="revealCard('blue')">Reveal Card</button>
-		</div>
-		<div id="card-red" class="card">
-			<h3>Red Deck</h3>
-			<div id="card-red-text"></div>
-			<button id="card-red-reveal" onclick="revealCard('red')">Reveal Card</button>
-		</div>
-	</div>
-	<div id="response">
-		<h2>Response</h2>
-		<textarea id="response-text"></textarea>
-	</div>
-	<button id="end-game" onclick="endGame()">End Game</button>
+  <h1>Card Game Test</h1>
+  <p>This is a simple website that allows you to test a card game.</p>
+
+  <section id="sliders">
+    <h2>Sliders</h2>
+    <p>There are three sliders in this section. The sliders allow you to manipulate the values. The current sum of the values is displayed at the bottom of the section.</p>
+    <slider id="slider1" value="1" min="1" max="6" step="1"></slider>
+    <slider id="slider2" value="2" min="1" max="6" step="1"></slider>
+    <slider id="slider3" value="3" min="1" max="6" step="1"></slider>
+
+  <section id="decks">
+    <h2>Decks</h2>
+    <p>There are two simulated decks of cards in this section. The decks will have 9 cards in predetermined order. The 'front' of each card will have text content that you provide. The 'back' of one deck will be blue, and the 'back' of the other deck will be red.</p>
+    <div id="deck1"></div>
+    <div id="deck2"></div>
+  </section>
+
+  <section id="questions">
+    <h2>Questions</h2>
+    <p>There is a text-input area where the player will answer text prompts on the cards. These should be saved so that at the end of the game they can all be exported.</p>
+    <textarea id="questions"></textarea>
+  </section>
+
 </body>
 </html>

@@ -1,0 +1,38 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 14px;
+}
+
+#console {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.prompt {
+    color: #00ff00;
+    margin-right: 5px;
+}
+
+#inputField {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: monospace;
+    font-size: 20px;
+    width: 800px;
+}
+
+#inputField::placeholder {
+    color: #777;
+}
+
+#output {
+    margin-top: 20px;
+    text-align: left;
+}
